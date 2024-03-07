@@ -5,7 +5,14 @@ export default function App(){
     function handlerGroup(){
         fetch('./groups.json')
         .then((response) => {
-            console.log(response.body);
+            if (response.status !== 200) {  
+                console.log('Looks like there was a problem. Status Code: ' +  
+                  response.status);  
+                return;  
+              }
+            response.json().then(function(data) {  
+                console.log(data);  
+              });  
         });
     }
     return(
