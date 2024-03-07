@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Groups from './components/Groups';
 
 export default function App(){
     const [groups, setGroups] = useState([]);
@@ -19,6 +20,7 @@ export default function App(){
         <>
             <h3>Hello world</h3>
             <button onClick={handlerGroup}>Поиск групп</button>
+            <Groups/>
         </>
         
     );

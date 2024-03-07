@@ -1,0 +1,8 @@
+@value cardWrapperColor: #d4fffe;
+
+
+.cardWrapper{
+    background-color: cardWrapperColor;
+    width: 400px;
+    height: 200px;
+}
