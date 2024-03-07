@@ -5,8 +5,7 @@ export default function App(){
     function handlerGroup(){
         fetch('./groups.json')
         .then((response) => {
-            JSON.stringify(response);
-            console.log(JSON.stringify(response));
+            console.log(response.body);
         });
     }
     return(
