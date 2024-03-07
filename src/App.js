@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Groups from './components/Groups';
 
 export default function App(){
-    let [data, setData] = useState([])
+    let [dataGroups, setData] = useState([])
     function handlerGroup(){
         fetch('./groups.json')
         .then((response) => {
@@ -23,7 +23,7 @@ export default function App(){
         <>
             <h3>Hello world</h3>
             <button onClick={handlerGroup}>Поиск групп</button>
-            <Groups props= {data}/>
+            <Groups props= {dataGroups}/>
         </>
         
     );
