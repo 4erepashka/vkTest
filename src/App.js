@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Groups from './components/Groups';
 
 export default function App(){
-    let response_data = [];
+    let [data, setData] = useState([])
     function handlerGroup(){
         fetch('./groups.json')
         .then((response) => {
@@ -13,7 +13,7 @@ export default function App(){
               }
             response.json().then(function(data) {  
                 console.log(data);  
-                response_data.push(data);
+                setData(data);
               });  
         });
     }
@@ -23,7 +23,7 @@ export default function App(){
         <>
             <h3>Hello world</h3>
             <button onClick={handlerGroup}>Поиск групп</button>
-            <Groups props= {response_data}/>
+            <Groups props= {data}/>
         </>
         
     );
