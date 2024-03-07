@@ -6,9 +6,8 @@ export default function App(){
         fetch('./groups.json')
         .then((response) => {
             JSON.stringify(response);
-            console.log(response);
-        })
-        .then((data => console.log(data)))
+            console.log(JSON.stringify(response));
+        });
     }
     return(
         <>
