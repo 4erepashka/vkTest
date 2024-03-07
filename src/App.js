@@ -18,7 +18,7 @@ export default function App(){
         });
     }
 
-    useEffect(handlerGroup, []);
+    useEffect(handlerGroup(), []);
     return(
         <>
             <h3>Hello world</h3>
