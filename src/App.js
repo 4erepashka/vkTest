@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Groups from './components/Groups';
 
 export default function App(){
@@ -17,6 +17,8 @@ export default function App(){
               });  
         });
     }
+
+    useEffect(handlerGroup, []);
     return(
         <>
             <h3>Hello world</h3>
