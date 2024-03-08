@@ -23,7 +23,7 @@ export default function App(){
         <>
             <h3>Hello world</h3>
             <button onClick={handlerGroup}>Поиск групп</button>
-            <Groups props= {dataGroups}/>
+            <Groups data={dataGroups}/>
         </>
         
     );

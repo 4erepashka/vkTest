@@ -2,6 +2,7 @@ import React from "react";
 import styles from '../styles/group.module.css'
 
 export default function Group(props){
+    let data = props;
     let avatar_color = 'red';
     let card_name = 'Котики';
     let members_count = 457;
@@ -20,7 +21,7 @@ export default function Group(props){
         }
       ];
       let card_private = false;
-      console.log(props);
+      console.log(data);
     return(
         <div className={styles.cardWrapper}>
             <div className={styles.avatar} style={{backgroundColor: `${avatar_color}`}}></div>
