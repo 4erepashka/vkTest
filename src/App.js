@@ -12,7 +12,6 @@ export default function App(){
                 return;  
               }
             response.json().then(function(data) {  
-                console.log(data);  
                 setData(data);
               });  
         });
