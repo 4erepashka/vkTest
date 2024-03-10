@@ -1,0 +1,24 @@
+.groups{
+    width: 1200px;
+    margin: 20px auto 0 auto;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns:  repeat(auto-fit , minmax(425px, 1fr));
+    justify-items: center;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) and (min-width: 375px){
+
+    .groups{
+        width: 350px;
+        margin: 20px auto 0 auto;
+        display: grid;
+        justify-content: center;
+        row-gap: 30px;
+        grid-template-columns:  repeat(auto-fill , 425px);
+        column-gap: 30px;
+        margin-bottom: 30px;
+    }
+}

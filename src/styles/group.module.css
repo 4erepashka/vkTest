@@ -2,54 +2,90 @@
 
 .cardWrapper{
     background-color: cardWrapperColor;
-    width: 320px;
-    height: 100px;
+    width: 425px;
+    height: 170px;
     border-radius: 25px;
     display: grid;
-    grid-template-columns: repeat(4, 65px);
+    grid-template-columns: repeat(5, 65px);
     column-gap: 20px;
+    position: relative;
 }
 
 .avatar{
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
     justify-self: center;
     margin-top: 20px;
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+
 }
 
 .name{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 6;
     grid-row-start: 1;
-    width: 200px;
+    width: 100px;
     margin-top: 20px;
     font-size: 1.5em;
+    justify-self: start;
 }
 .members{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
     grid-row-start: 1;
-    margin-top: 55px;
+    margin-top: 75px;
     width: 200px;
     
 }
 .friends{
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
     grid-row-start: 1;
-    width: 200px;
-    margin-top: 55px;
+    width: 100px;
+    margin-top: 75px;
     margin-left: -20px;
+    cursor: pointer;
 
 }
 .private{
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
     grid-row-start: 1;
     width: 100px;
+    height: 15px;
     margin-top: 10px;
-    margin-left:
+    margin-left:-10px;
 }
+
+.friendsDescr{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    top: 110px;
+    left: 225px;
+    justify-content: center;
+}
+
+
+
+.friendsDescrElement{
+    display: flex;
+    width: 100%;    
+
+}
+.friendsDescrItem{
+    display: flex;
+    margin-left: 20px;
+}
+
+
+ 
+
+
