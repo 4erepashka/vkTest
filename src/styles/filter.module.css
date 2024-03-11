@@ -54,19 +54,19 @@ select::-ms-expand {
 }
 
 
-.select::after {
+.select_01::after, .select_02::after, .select_03::after {
     content: '\25BC';
     position: absolute;
     top: 0;
     right: 0;
-    padding: .5em;
+    padding: .4em;
     background-color: #34495e;
     transition: .25s all ease;
     pointer-events: none;
 }
   
-.select:hover::after {
-    color: #f39c12;
+.select_01:hover::after, .select_02:hover::after,.select_03:hover::after {
+    color: #d4fffe;
 }
   
 
@@ -167,7 +167,7 @@ select::-ms-expand {
     }
     
     
-    .select::after {
+    .select_01::after,   .select_02::after,  .select_03::after{
         content: '\25BC';
         position: absolute;
         top: 0;
@@ -178,7 +178,7 @@ select::-ms-expand {
         pointer-events: none;
     }
       
-    .select:hover::after {
+    .select_01:hover::after, .select_02:hover::after, .select_03:hover::after  {
         color: #f39c12;
     }
       
