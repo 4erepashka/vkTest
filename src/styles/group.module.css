@@ -39,6 +39,7 @@
     margin-top: 75px;
     width: 200px;
     
+
 }
 .friends{
     grid-column-start: 5;
@@ -86,7 +87,36 @@
     margin-left: 20px;
 }
 
+@media (max-width: 576px) and (min-width: 375px){
+    .cardWrapper{
+        width: 350px;
+        height: 170px;
+    
+    }
 
+    .private{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        width: 100px;
+        height: 15px;
+        margin-top: 10px;
+        margin-left:10px;
+    }
+
+    .name{
+        margin-left: -20px;
+    }
+    .friends{
+        margin-left: -60px;
+    }
+    .members{
+        margin-left: -20px;    
+    }
+    .friendsDescr{
+        left: 150px;
+    }
+}
  
 
 
